@@ -5,7 +5,7 @@ import About from './../components/About';
 import Contact from "../components/Contact";
 import Layout from "../components/Layout";
 import { Children } from "react";
-import Profile from "../components/Profile/Profile";
+import Profile from "../components/profile/Profile";
 export let routes=createBrowserRouter([
     {path:"/", element:<Layout/>,
         children: [
