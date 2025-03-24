@@ -1,13 +1,22 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 
 const Navbar=()=>{
     return(
         <nav className="bg-[#0155A0] h-[70px] px-10">
             <ul className="flex gap-10 items-center h-full text-white">
-                <li><a href="#">Home</a></li>
-                <li><a href="./services">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <NavLink to="/">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/services">Services</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about">About Us</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contact">Contact</NavLink>
+                </li>
             </ul>
         </nav>
     )
